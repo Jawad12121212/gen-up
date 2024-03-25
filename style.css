@@ -1,0 +1,488 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.crsr {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background: #DAFA78;
+    position: fixed;
+    z-index: 1;
+    mix-blend-mode: difference;
+    /* transition: 1s; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1vw;
+    color: #000;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 1000;
+    font-style: italic;
+    transform: translate(-50%,-50%);
+    pointer-events: none;
+}
+
+.main {
+    background-image: url("https://gen-up.de/upload/pages/start/gen-up-start-header-bg.svg");
+    background-size: cover;
+}
+
+.fixer{
+    height: 6vh;
+    width: 100%;
+    background: #DAFA78;
+    color: #4417AC;
+    font-family: "Montserrat", sans-serif;
+    /* font-weight: bolder; */
+    font-size: 10px;
+    position: fixed;
+    z-index: 999;
+    top: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.page1 {
+    height: 100vh;
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 4vw 5vw 0vw 5vw;
+}
+
+.navbar .left img {
+    height: 2.4vw;
+}
+
+.navbar .middle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3vw;
+}
+
+.navbar .middle a {
+    text-decoration: none;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    font-weight: bolder;
+
+}
+
+.navbar .middle a:nth-child(1) {
+    color: #DAFA78;
+}
+
+.navbar .right button {
+    padding: 10px 15px;
+    border-radius: 50px;
+    border: none;
+    color: black;
+    background: white;
+    font-family: "Josefin Sans";
+    font-weight: bolder;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.navbar .right button:hover {
+    color: #4417AC;
+    background: #DAFA78;
+}
+
+.page1 .center {
+    height: 86vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    line-height: 6vw;
+}
+
+.page1 .center h1 {
+    font-size: 7vw;
+    color: #DAFA78;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 1000;
+}
+
+.page1 .center h2 {
+    font-size: 7vw;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 1000;
+}
+
+.page1 .center .moving {
+    margin-top: 3vw;
+    height: 15vh;
+    width: 70%;
+    white-space: nowrap;
+    overflow-x: auto;
+}
+
+.page1 .center .moving::-webkit-scrollbar {
+    display: none;
+}
+
+.page1 .center .moving .con {
+    white-space: nowrap;
+    display: inline-block;
+    animation: move 6s linear infinite;
+}
+
+@keyframes move {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.page1 .center .moving .con h3 {
+    display: inline-block;
+    font-size: 7vw;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 1000;
+}
+
+.page1 .center .moving .con .gola {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background: #4417AC;
+    display: inline-block;
+    margin: 0px 2vw;
+}
+
+.page1 .center button {
+    padding: 2.3vw 3vw;
+    border: none;
+    border-radius: 50px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    margin-top: 3vw;
+    cursor: pointer;
+    transition: .5s;
+
+}
+
+.page1 .center button:hover {
+    background: #DAFA78;
+    color: #4417AC;
+}
+
+.page2 {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page2 .moving-pages {
+    white-space: nowrap;
+    height: 90vh;
+    width: 90%;
+    overflow-x: auto;
+}
+
+.page2 .moving-pages::-webkit-scrollbar {
+    display: none;
+}
+
+.page2 .moving-pages .box {
+    margin: 0vw 2vw;
+    border-radius: 30px;
+}
+
+.page2 .moving-pages .box1 {
+    height: 100%;
+    width: 400px;
+    background: grey;
+    display: inline-block;
+}
+
+.page2 .moving-pages .box1 video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    background: grey;
+    object-position: center;
+    border-radius: 30px;
+}
+
+ .page2 .moving-pages .box2 {
+    height: 100%;
+    width: 400px;
+    background: grey;
+    display: inline-block;
+} 
+
+.page2 .moving-pages .box3 {
+    height: 100%;
+    width: 400px;
+    background: grey;
+    display: inline-block;
+}
+
+.page2 .moving-pages .box4 {
+    height: 100%;
+    width: 400px;
+    background: grey;
+    display: inline-block;
+}
+
+.page2 .moving-pages .box5 {
+    height: 100%;
+    width: 400px;
+    background: grey;
+    display: inline-block;
+}
+
+.page2 .moving-pages .box6 {
+    height: 100%;
+    width: 400px;
+    background: grey;
+    display: inline-block;
+}
+
+.page2 .moving-pages .box7 {
+    height: 100%;
+    width: 400px;
+    background: grey;
+    display: inline-block;
+}
+
+.page2 .moving-pages .box8 {
+    height: 100%;
+    width: 400px;
+    background: rgb(230, 5, 5);
+    display: inline-block;
+}
+
+.page3{
+    height: 150vh;
+    width: 100%;
+    background: white;
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+}
+
+.page3 h2{
+    font-size: 2vw;
+    font-weight: 1000;
+    margin: 7vw 0vw 2vw 0vw;
+}
+
+.page3 h1{
+    font-size: 5vw;
+    font-weight: 1000;
+    width: 84%;
+    text-align: center;
+    line-height: 5vw;
+}
+
+.page3 h1 span {
+    color: #4417B6;
+}
+
+.page3 h1 img{
+    height: 60px;
+}
+
+.page3 button {
+    padding: 2.3vw 3vw;
+    border: none;
+    border-radius: 50px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    margin: 3vw 0vw 6vw 0vw;
+    cursor: pointer;
+    transition: .5s;
+    color: #fff;
+    background: #000;
+}
+
+.page3 button:hover {
+    background: #4417B6;
+    color: #fff;
+}
+
+.page3 p {
+    width: 35%;
+    /* font-weight: 600; */
+    font-size: 16px;
+    text-align: center;
+}
+
+.page4 {
+    height: 130vh;
+    width: 100%;
+    background: #F5F5F5;
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.page4> p {
+    margin: 9vw 0vw 1.5vw 0vw;
+}
+
+.page4 h1 {
+    font-size: 4vw;
+    font-weight: 1000;
+}
+
+.page4 .boxes {
+    margin-top: 3vw;
+    height: 70vh;
+    width: 90%;
+    /* background: red; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.page4 .boxes .box {
+    height: 95%;
+    width: 31%;
+    background: white;
+    border-radius: 30px;
+    transition: .4s;
+    display: flex;
+    /* justify-content: center; */
+    cursor: pointer;
+    align-items: center;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+.page4 .boxes .box img {
+    height: 7vw;
+    margin-bottom: 4vw;
+}
+
+.page4 .boxes .box h3{
+    font-size: 3vw;
+    font-weight: 1000;
+    margin-bottom: 2vw;
+}
+
+.page4 .boxes .box p {
+    text-align: center;
+    width: 95%;
+}
+
+.page4 .boxes .box button{
+    padding: 2vw 2vw;
+    border: none;
+    border-radius: 50px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    margin: 3vw 0vw 0vw 0vw;
+    cursor: pointer;
+    transition: .5s;
+    color: #fff;
+    background: #000;
+    transform: translateY(150%);
+    transition: .5s;
+    opacity: 0;
+}
+
+.page4 .boxes .box:hover {
+    scale: 1.03;
+    transform: rotate(2deg);
+    background: #4417B6;
+    color: #fff;
+}
+
+.page4 .boxes .box:nth-child(2):hover{
+    scale: 1.03;
+    transform: rotate(-2deg);
+    background: #4417B6;
+    color: #fff;
+}
+
+.page4 .boxes .box:nth-child(1):hover button{
+    transform: translateY(0);
+    opacity: 1;
+}
+.page4 .boxes .box:nth-child(2):hover button{
+    transform: translateY(0);
+    opacity: 1;
+}
+.page4 .boxes .box:nth-child(3):hover button{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.page5{
+    height: 130vh;
+    width: 100%;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+}
+
+.page5> p{
+    margin-top: 7vw;
+    font-weight: bolder;
+}
+
+.page5 h1{
+    margin-top: .5vw;
+    font-weight: 1000;
+    font-size: 4vw;
+}
+
+.page5 .drag {
+    height: 100vh;
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: auto;
+}
+
+.page5 .drag::-webkit-scrollbar{
+    display: none;
+}
+
+.page5 .drag .box {
+    height: 95%;
+    width: 400px;
+    background: #4417AC;
+    display: inline-block;
+    margin: 1.2vw 2vw 0vw 2vw;
+    border-radius: 30px;
+}
+
