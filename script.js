@@ -102,6 +102,8 @@ drag.addEventListener("mouseleave", function () {
 
 let btn = document.querySelectorAll(".btn").forEach(btn => {
     btn.addEventListener("mousemove", (e) => {
+        crsr.style.height = "30px"
+        crsr.style.width = "30px"
         let x = e.offsetX;
         let y = e.offsetY;
         let btnWidth = btn.clientWidth;
@@ -112,5 +114,7 @@ let btn = document.querySelectorAll(".btn").forEach(btn => {
     })
     btn.addEventListener("mouseout", function (e) {
         btn.style.transform = "";
+        crsr.style.height = "15px"
+        crsr.style.width = "15px"
     })
 })
